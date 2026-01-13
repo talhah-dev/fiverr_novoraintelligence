@@ -178,7 +178,7 @@ export default function ArchitectureSnapshotSection() {
                             <Button
                                 asChild
                                 variant="outline"
-                                className="border-white/15 bg-white/5 text-white hover:bg-white/10"
+                                className="border-white/15 bg-white/5 hover:text-white text-white hover:bg-white/10"
                             >
                                 <Link href="/contact">Talk to an expert</Link>
                             </Button>

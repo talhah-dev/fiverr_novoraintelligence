@@ -183,10 +183,6 @@ export default function RoiCalculatorSection() {
                                     <Link href="/how-we-work">See how we deliver</Link>
                                 </Button>
                             </div>
-
-                            <p className="mt-4 text-xs text-white/45">
-                                This is UI-only and runs client-side.
-                            </p>
                         </div>
                     </div>
                 </div>

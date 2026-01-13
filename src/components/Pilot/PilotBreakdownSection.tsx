@@ -99,7 +99,7 @@ export default function PilotBreakdownSection() {
                                 >
                                     {/* marker */}
                                     <div className="hidden sm:block">
-                                        <div className="absolute left-5 top-8 h-3 w-3 -translate-x-1/2 rounded-full bg-cyan-300 shadow-[0_0_18px_rgba(34,211,238,0.35)]" />
+                                        <div className="absolute left-7 top-6 h-3 w-3 -translate-x-1/2 rounded-full bg-cyan-300 shadow-[0_0_18px_rgba(34,211,238,0.35)]" />
                                     </div>
 
                                     <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">

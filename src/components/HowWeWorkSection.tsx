@@ -29,7 +29,7 @@ const steps = [
 
 export default function HowWeWorkSection() {
     return (
-        <section id="how-we-work" className="relative bg-[#070B14] py-16 sm:py-20">
+        <section id="how-we-work" className="relative py-16 sm:py-20">
             {/* subtle background */}
             <div className="pointer-events-none absolute inset-0">
                 <div className="absolute left-[-120px] top-10 h-[360px] w-[360px] rounded-full bg-cyan-500/10 blur-[120px]" />
@@ -124,7 +124,7 @@ export default function HowWeWorkSection() {
                             <Button
                                 asChild
                                 variant="outline"
-                                className="border-white/15 bg-white/5 text-white hover:bg-white/10"
+                                className="border-white/15 hover:text-white bg-white/5 text-white hover:bg-white/10"
                             >
                                 <Link href="/how-we-work">See full process</Link>
                             </Button>

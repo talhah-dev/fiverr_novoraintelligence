@@ -4,10 +4,11 @@ import Link from "next/link";
 import { ArrowRight, ShieldCheck, Zap, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import Image from "next/image";
 
 export default function HeroSection() {
     return (
-        <section className="relative overflow-hidden bg-[#070B14]">
+        <section className="relative overflow-hidden bg-[#070B14] md:pt-10 pt-14">
             {/* Background accents */}
             <div className="pointer-events-none absolute inset-0">
                 <div className="absolute -top-24 left-1/2 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-cyan-500/10 blur-[120px]" />
@@ -38,7 +39,7 @@ export default function HeroSection() {
                             </Badge>
                         </div>
 
-                        <h1 className="mt-6 text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-6xl">
+                        <h1 className="mt-6 text-4xl leading-tight font-semibold tracking-tight text-white sm:text-5xl lg:text-6xl">
                             AI Integrations for{" "}
                             <span className="bg-gradient-to-r from-cyan-200 via-cyan-400 to-blue-400 bg-clip-text text-transparent">
                                 WealthTech
@@ -58,7 +59,7 @@ export default function HeroSection() {
                                 size="lg"
                                 className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white hover:from-cyan-400 hover:to-blue-500"
                             >
-                                <Link href="#contact">
+                                <Link href="/contact">
                                     Start a 30-Day Pilot
                                     <ArrowRight className="ml-2 h-4 w-4" />
                                 </Link>
@@ -68,13 +69,12 @@ export default function HeroSection() {
                                 asChild
                                 size="lg"
                                 variant="outline"
-                                className="border-white/15 bg-white/5 text-white hover:bg-white/10"
+                                className="border-white/15 bg-white/5 hover:text-white text-white hover:bg-white/10"
                             >
-                                <Link href="#how-we-work">How we work</Link>
+                                <Link href="/how-we-work">How we work</Link>
                             </Button>
                         </div>
 
-                        {/* Mini trust / pain points */}
                         <div className="mt-10 grid gap-3 sm:grid-cols-3">
                             <div className="rounded-xl border border-white/10 bg-white/5 p-4">
                                 <div className="flex items-center gap-2 text-white">
@@ -107,7 +107,6 @@ export default function HeroSection() {
                             </div>
                         </div>
 
-                        {/* Logos */}
                         <div className="mt-10">
                             <p className="text-xs uppercase tracking-wider text-white/45">
                                 Built on trusted infrastructure
@@ -127,9 +126,7 @@ export default function HeroSection() {
 
                     {/* Right */}
                     <div className="relative">
-                        {/* Card */}
                         <div className="relative rounded-2xl border border-white/10 bg-gradient-to-b from-white/10 to-white/5 p-6 shadow-2xl">
-                            {/* Window dots */}
                             <div className="mb-5 flex items-center gap-2">
                                 <span className="h-2.5 w-2.5 rounded-full bg-white/30" />
                                 <span className="h-2.5 w-2.5 rounded-full bg-white/20" />
@@ -137,12 +134,13 @@ export default function HeroSection() {
                             </div>
 
                             <div className="grid gap-4 sm:grid-cols-2">
-                                {/* Chart mock */}
                                 <div className="rounded-xl border border-white/10 bg-white/5 p-4">
                                     <p className="text-xs font-medium text-white/70">
                                         Workflow impact
                                     </p>
-                                    <div className="mt-4 h-28 rounded-lg border border-white/10 bg-[linear-gradient(to_top,rgba(34,211,238,0.18),transparent)]" />
+                                    <div className="mt-4 h-32 rounded-lg border border-white/10 bg-[linear-gradient(to_top,rgba(34,211,238,0.18),transparent)]" >
+                                        <Image src={"/img.png"} alt="img" width={400}  height={400} className="w-full h-32 rounded-lg border border-white/10"  />
+                                    </div>
                                     <div className="mt-4 space-y-2">
                                         <div className="h-2 w-4/5 rounded-full bg-white/10">
                                             <div className="h-2 w-2/3 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500" />
@@ -156,15 +154,12 @@ export default function HeroSection() {
                                     </div>
                                 </div>
 
-                                {/* Node mock */}
                                 <div className="rounded-xl border border-white/10 bg-white/5 p-4">
                                     <p className="text-xs font-medium text-white/70">
                                         Integration safety
                                     </p>
                                     <div className="relative mt-5 flex h-40 items-center justify-center rounded-lg border border-white/10 bg-[radial-gradient(circle_at_center,rgba(34,211,238,0.14),transparent_55%)]">
-                                        {/* hub */}
                                         <div className="absolute h-12 w-12 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 shadow-[0_0_30px_rgba(34,211,238,0.35)]" />
-                                        {/* satellites */}
                                         {[
                                             "top-4 left-1/2 -translate-x-1/2",
                                             "bottom-4 left-1/2 -translate-x-1/2",
@@ -178,7 +173,6 @@ export default function HeroSection() {
                                                 className={`absolute ${pos} h-3.5 w-3.5 rounded-full bg-cyan-200/90 shadow-[0_0_18px_rgba(34,211,238,0.35)]`}
                                             />
                                         ))}
-                                        {/* lines */}
                                         <div className="absolute inset-0 opacity-60">
                                             <div className="absolute left-1/2 top-6 h-[calc(50%-18px)] w-px -translate-x-1/2 bg-gradient-to-b from-cyan-300/60 to-transparent" />
                                             <div className="absolute left-1/2 bottom-6 h-[calc(50%-18px)] w-px -translate-x-1/2 bg-gradient-to-t from-cyan-300/60 to-transparent" />
@@ -195,7 +189,6 @@ export default function HeroSection() {
                                 </div>
                             </div>
 
-                            {/* Footer row */}
                             <div className="mt-5 grid gap-3 sm:grid-cols-3">
                                 {[
                                     { k: "Data touched", v: "Non-PII only" },

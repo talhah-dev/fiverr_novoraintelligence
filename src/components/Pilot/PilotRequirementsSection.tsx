@@ -139,15 +139,12 @@ export default function PilotRequirementsSection() {
                                 <Button
                                     asChild
                                     variant="outline"
-                                    className="border-white/15 bg-white/5 text-white hover:bg-white/10"
+                                    className="border-white/15 hover:text-white bg-white/5 text-white hover:bg-white/10"
                                 >
                                     <Link href="/security">Review security model</Link>
                                 </Button>
                             </div>
 
-                            <p className="mt-4 text-xs text-white/45">
-                                Note: This is UI-only. We can add a checklist form later if you want.
-                            </p>
                         </div>
                     </div>
                 </div>

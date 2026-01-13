@@ -133,10 +133,6 @@ export default function RoiMeasurementSection() {
                                     <Link href="/security">Security model</Link>
                                 </Button>
                             </div>
-
-                            <p className="mt-4 text-xs text-white/45">
-                                You can later replace this panel with a downloadable PDF.
-                            </p>
                         </div>
                     </div>
                 </div>

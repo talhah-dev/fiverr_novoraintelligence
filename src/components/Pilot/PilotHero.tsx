@@ -7,18 +7,7 @@ import { Badge } from "@/components/ui/badge";
 
 export default function PilotHero() {
     return (
-        <section className="relative overflow-hidden bg-[#070B14]">
-            {/* Unique background: split glow + “timeline rail” */}
-            <div className="pointer-events-none absolute inset-0">
-                <div className="absolute left-0 top-0 h-full w-[55%] bg-[radial-gradient(900px_520px_at_20%_20%,rgba(34,211,238,0.14),transparent_60%)]" />
-                <div className="absolute right-0 top-0 h-full w-[55%] bg-[radial-gradient(900px_520px_at_80%_25%,rgba(59,130,246,0.14),transparent_60%)]" />
-                <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(7,11,20,0.18),rgba(7,11,20,1))]" />
-                <div className="absolute left-1/2 top-0 h-full w-px -translate-x-1/2 bg-gradient-to-b from-white/20 via-white/10 to-transparent opacity-60" />
-                <div className="absolute left-1/2 top-24 h-2 w-2 -translate-x-1/2 rounded-full bg-cyan-300 shadow-[0_0_18px_rgba(34,211,238,0.45)]" />
-                <div className="absolute left-1/2 top-56 h-2 w-2 -translate-x-1/2 rounded-full bg-blue-300 shadow-[0_0_18px_rgba(59,130,246,0.45)]" />
-                <div className="absolute left-1/2 top-96 h-2 w-2 -translate-x-1/2 rounded-full bg-cyan-200 shadow-[0_0_18px_rgba(34,211,238,0.35)]" />
-            </div>
-
+        <section className="relative overflow-hidden bg-[#070B14] pt-14">
             <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
                 <div className="grid items-start gap-10 lg:grid-cols-12">
                     {/* Left */}

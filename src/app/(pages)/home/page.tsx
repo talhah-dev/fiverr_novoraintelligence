@@ -11,14 +11,15 @@ import React from 'react'
 export default function HomePage() {
     return (
         <Wrapper>
-
-            <HeroSection />
-            <ProblemSections />
-            <HowWeWorkSection />
-            <SecurityComplianceSection />
-            <ROISection />
-            <TrustedSystemsSection />
-            <ContactCTASection />
+            <div className="overflow-x-hidden bg-[#070B14]">
+                <HeroSection />
+                <ProblemSections />
+                <HowWeWorkSection />
+                <SecurityComplianceSection />
+                <ROISection />
+                <TrustedSystemsSection />
+                <ContactCTASection />
+            </div>
 
         </Wrapper>
     )

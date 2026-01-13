@@ -8,11 +8,13 @@ import PilotRequirementsSection from '@/components/Pilot/PilotRequirementsSectio
 export default function Pilot() {
     return (
         <Wrapper>
-            <PilotHero />
-            <PilotDeliverablesSection />
-            <PilotBreakdownSection />
-            <PilotRequirementsSection />
-            <ContactCTASection />
+            <div className="overflow-x-hidden">
+                <PilotHero />
+                <PilotDeliverablesSection />
+                <PilotBreakdownSection />
+                <PilotRequirementsSection />
+                <ContactCTASection />
+            </div>
         </Wrapper>
     )
 }

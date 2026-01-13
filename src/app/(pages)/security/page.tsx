@@ -9,11 +9,13 @@ import React from 'react'
 export default function page() {
     return (
         <Wrapper>
-            <SecurityHero />
-            <DataBoundariesSection />
-            <GovernanceControlsSection />
-            <ArchitectureSnapshotSection />
-            <ContactCTASection />
+            <div className="overflow-x-hidden">
+                <SecurityHero />
+                <DataBoundariesSection />
+                <GovernanceControlsSection />
+                <ArchitectureSnapshotSection />
+                <ContactCTASection />
+            </div>
         </Wrapper>
     )
 }

@@ -11,13 +11,14 @@ import {
     SheetTitle,
     SheetTrigger,
 } from "@/components/ui/sheet";
+import Image from "next/image";
 
 const navLinks = [
-    { label: "Problems", href: "/#problems" },
-    { label: "How we work", href: "/#how-we-work" },
-    { label: "Security", href: "/#security" },
-    { label: "ROI", href: "/#roi" },
-    { label: "Pilot", href: "/#pilot" },
+    { label: "Problems", href: "/problems" },
+    { label: "How we work", href: "/how-we-work" },
+    { label: "Security", href: "/security" },
+    { label: "ROI", href: "/roi" },
+    { label: "Pilot", href: "/pilot" },
 ];
 
 export default function Navbar() {
@@ -32,13 +33,7 @@ export default function Navbar() {
                         className="group inline-flex items-center gap-2 rounded-xl px-2 py-1"
                         aria-label="novoraintelligence home"
                     >
-                        <div className="h-9 w-9 rounded-xl border border-white/10 bg-white/5 shadow-sm" />
-                        <div className="leading-tight">
-                            <p className="text-sm font-semibold text-white">
-                                novora<span className="text-cyan-400">intelligence</span>
-                            </p>
-                            <p className="text-[11px] text-white/55">WealthTech AI Integrations</p>
-                        </div>
+                        <Image src={"/logo.png"} width={150} height={150} alt="logo" className="md:h-16 h-12 w-auto" />
                     </Link>
 
                     {/* Desktop nav */}
@@ -59,7 +54,7 @@ export default function Navbar() {
                         <Button
                             asChild
                             variant="outline"
-                            className="border-white/15 bg-white/5 text-white hover:bg-white/10"
+                            className="border-white/15 hover:text-white bg-white/5 text-white hover:bg-white/10"
                         >
                             <Link href="/contact">Contact</Link>
                         </Button>
@@ -88,18 +83,17 @@ export default function Navbar() {
 
                             <SheetContent
                                 side="right"
-                                className="border-white/10 bg-black/40 text-white backdrop-blur-2xl"
+                                className="border-white/10 bg-black/40 text-white backdrop-blur-2xl "
                             >
                                 <SheetHeader className="space-y-1">
                                     <SheetTitle className="text-left text-white">
-                                        novora<span className="text-cyan-400">intelligence</span>
                                     </SheetTitle>
-                                    <p className="text-left text-sm text-white/60">
-                                        WealthTech AI Integrations
-                                    </p>
+                                    <Link href={"/"}>
+                                        <Image src={"/logo.png"} width={150} height={150} alt="logo" className="h-12 w-auto" />
+                                    </Link>
                                 </SheetHeader>
 
-                                <div className="mt-6 grid gap-2">
+                                <div className="mt-6 grid gap-2 px-2">
                                     {navLinks.map((l) => (
                                         <Link
                                             key={l.href}
@@ -111,7 +105,7 @@ export default function Navbar() {
                                     ))}
                                 </div>
 
-                                <div className="mt-6 grid gap-2">
+                                <div className="mt-6 grid gap-3 px-4">
                                     <Button
                                         asChild
                                         variant="outline"
@@ -129,10 +123,6 @@ export default function Navbar() {
                                         </Link>
                                     </Button>
                                 </div>
-
-                                <p className="mt-6 text-xs text-white/45">
-                                    Smooth slide animation powered by shadcn Sheet.
-                                </p>
                             </SheetContent>
                         </Sheet>
                     </div>

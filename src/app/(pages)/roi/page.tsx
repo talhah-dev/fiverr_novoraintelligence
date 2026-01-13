@@ -8,11 +8,13 @@ import RoiMeasurementSection from '@/components/roi/RoiMeasurementSection'
 export default function page() {
     return (
         <Wrapper>
-            <RoiHero />
-            <RoiBeforeAfterSection />
-            <RoiCalculatorSection />
-            <RoiMeasurementSection />
-            <ContactCTASection />
+            <div className="overflow-x-hidden">
+                <RoiHero />
+                <RoiBeforeAfterSection />
+                <RoiCalculatorSection />
+                <RoiMeasurementSection />
+                <ContactCTASection />
+            </div>
         </Wrapper>
     )
 }

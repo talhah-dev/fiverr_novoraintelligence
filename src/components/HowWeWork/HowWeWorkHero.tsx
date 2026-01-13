@@ -7,23 +7,12 @@ import { Button } from "@/components/ui/button";
 
 export default function HowWeWorkHero() {
     return (
-        <section className="relative overflow-hidden bg-[#070B14]">
+        <section className="relative overflow-hidden bg-[#070B14] pt-14">
             {/* Unique background: “process lanes” */}
-            <div className="pointer-events-none absolute inset-0">
+            <div className="pointer-events-none absolute md:block hidden inset-0">
                 <div className="absolute -top-40 left-[-140px] h-[620px] w-[620px] rounded-full bg-cyan-500/10 blur-[170px]" />
                 <div className="absolute -bottom-48 right-[-160px] h-[720px] w-[720px] rounded-full bg-blue-500/10 blur-[190px]" />
                 <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(7,11,20,0.16),rgba(7,11,20,1))]" />
-
-                {/* lanes */}
-                <div className="absolute left-[8%] top-0 h-full w-px bg-white/10" />
-                <div className="absolute left-[18%] top-0 h-full w-px bg-white/10" />
-                <div className="absolute left-[82%] top-0 h-full w-px bg-white/10" />
-                <div className="absolute left-[92%] top-0 h-full w-px bg-white/10" />
-
-                {/* glow nodes */}
-                <div className="absolute left-[18%] top-28 h-2 w-2 rounded-full bg-cyan-300 shadow-[0_0_18px_rgba(34,211,238,0.45)]" />
-                <div className="absolute left-[82%] top-48 h-2 w-2 rounded-full bg-blue-300 shadow-[0_0_18px_rgba(59,130,246,0.45)]" />
-                <div className="absolute left-[18%] top-[70%] h-2 w-2 rounded-full bg-cyan-200 shadow-[0_0_18px_rgba(34,211,238,0.35)]" />
             </div>
 
             <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">

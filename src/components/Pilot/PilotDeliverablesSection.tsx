@@ -143,14 +143,10 @@ export default function PilotDeliverablesSection() {
                                 <Button
                                     asChild
                                     variant="outline"
-                                    className="border-white/15 bg-white/5 text-white hover:bg-white/10"
+                                    className="border-white/15 hover:text-white bg-white/5 text-white hover:bg-white/10"
                                 >
                                     <Link href="/security">Review security model</Link>
                                 </Button>
-
-                                <p className="text-xs text-white/45">
-                                    Optional: add a downloadable “Pilot One-Pager” PDF later.
-                                </p>
                             </div>
                         </div>
                     </div>

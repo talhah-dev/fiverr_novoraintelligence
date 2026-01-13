@@ -68,7 +68,7 @@ export default function ProblemSections() {
                                         {p.desc}
                                     </p>
 
-                                    <Button
+                                    {/* <Button
                                         asChild
                                         variant="ghost"
                                         className="h-auto p-0 text-cyan-200 hover:bg-transparent hover:text-cyan-100"
@@ -76,7 +76,7 @@ export default function ProblemSections() {
                                         <Link href={p.href} className="inline-flex items-center gap-2">
                                             Learn more <ArrowRight className="h-4 w-4 transition group-hover:translate-x-0.5" />
                                         </Link>
-                                    </Button>
+                                    </Button> */}
                                 </CardContent>
                             </Card>
                         );

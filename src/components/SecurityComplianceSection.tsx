@@ -38,7 +38,7 @@ const promises = [
 
 export default function SecurityComplianceSection() {
     return (
-        <section id="security" className="relative bg-[#070B14] py-16 sm:py-20">
+        <section id="security" className="relative py-16 sm:py-20">
             {/* background */}
             <div className="pointer-events-none absolute inset-0">
                 <div className="absolute left-1/2 top-[-140px] h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-cyan-500/10 blur-[130px]" />
@@ -132,10 +132,6 @@ export default function SecurityComplianceSection() {
                                 >
                                     <Link href="/pilot">Start a 30-Day Pilot</Link>
                                 </Button>
-
-                                <p className="text-xs text-white/45">
-                                    Tip: Link this section from ads to reduce compliance objections fast.
-                                </p>
                             </div>
                         </div>
                     </div>

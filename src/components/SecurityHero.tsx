@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/badge";
 
 export default function SecurityHero() {
     return (
-        <section className="relative overflow-hidden bg-[#070B14]">
+        <section className="relative pt-14 overflow-hidden bg-[#070B14]">
             {/* Unique background: diagonal glass + grid */}
             <div className="pointer-events-none absolute inset-0">
                 <div className="absolute -top-32 left-[-120px] h-[520px] w-[520px] rounded-full bg-cyan-500/12 blur-[140px]" />

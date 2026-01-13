@@ -8,10 +8,12 @@ import React from 'react'
 export default function page() {
     return (
         <Wrapper>
-            <HowWeWorkHero />
-            <HowWeWorkStepsSection />
-            <HowWeWorkToolsSection />
-            <ContactCTASection />
+            <div className="overflow-x-hidden">
+                <HowWeWorkHero />
+                <HowWeWorkStepsSection />
+                <HowWeWorkToolsSection />
+                <ContactCTASection />
+            </div>
         </Wrapper>
     )
 }

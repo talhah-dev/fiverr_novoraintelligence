@@ -129,7 +129,7 @@ export default function ROISection() {
                                 <Button
                                     asChild
                                     variant="outline"
-                                    className="border-white/15 bg-white/5 text-white hover:bg-white/10"
+                                    className="border-white/15 hover:text-white bg-white/5 text-white hover:bg-white/10"
                                 >
                                     <Link href="/roi">See ROI Details</Link>
                                 </Button>

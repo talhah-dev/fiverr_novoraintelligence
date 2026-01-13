@@ -134,26 +134,22 @@ export default function TrustedSystemsSection() {
                             </div>
 
                             <div className="mt-8 flex flex-col gap-3">
-                                <Button
+                                {/* <Button
                                     asChild
                                     className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white hover:from-cyan-400 hover:to-blue-500"
                                 >
                                     <Link href="/trusted-systems">
                                         See the credibility model <ArrowRight className="ml-2 h-4 w-4" />
                                     </Link>
-                                </Button>
+                                </Button> */}
 
                                 <Button
                                     asChild
                                     variant="outline"
-                                    className="border-white/15 bg-white/5 text-white hover:bg-white/10"
+                                    className="border-white/15 hover:text-white bg-white/5 text-white hover:bg-white/10"
                                 >
                                     <Link href="/contact">Talk to us</Link>
                                 </Button>
-
-                                <p className="text-xs text-white/45">
-                                    Add the 40s hero video here later (16:9).
-                                </p>
                             </div>
                         </div>
                     </div>

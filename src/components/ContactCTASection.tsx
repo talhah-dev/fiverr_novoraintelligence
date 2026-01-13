@@ -49,7 +49,7 @@ export default function ContactCTASection() {
           <div className="lg:col-span-5">
             <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
               <div className="flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-black/20">
+                <div className="flex shrink-0 h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-black/20">
                   <Mail className="h-5 w-5 text-cyan-300" />
                 </div>
                 <div>
@@ -92,14 +92,10 @@ export default function ContactCTASection() {
                 <Button
                   asChild
                   variant="outline"
-                  className="border-white/15 bg-white/5 text-white hover:bg-white/10"
+                  className="border-white/15 hover:text-white bg-white/5 text-white hover:bg-white/10"
                 >
                   <Link href="/security">Security overview</Link>
                 </Button>
-
-                <p className="text-xs text-white/45">
-                  Replace this form with Calendly later if you prefer.
-                </p>
               </div>
             </div>
           </div>
@@ -108,13 +104,13 @@ export default function ContactCTASection() {
           <div className="lg:col-span-7">
             <Card className="border-white/10 bg-white/5 shadow-2xl backdrop-blur-sm">
               <CardContent className="p-6">
-                <form className="space-y-4">
+                <form className="space-y-6">
                   <div className="grid gap-4 sm:grid-cols-2">
                     <div className="space-y-2">
                       <label className="text-sm text-white/80">Name</label>
                       <Input
                         placeholder="Your name"
-                        className="border-white/10 bg-black/20 text-white placeholder:text-white/40"
+                        className="border-white/10 bg-black/20 py-5 mt-1.5 text-white placeholder:text-white/40"
                       />
                     </div>
                     <div className="space-y-2">
@@ -122,7 +118,7 @@ export default function ContactCTASection() {
                       <Input
                         type="email"
                         placeholder="you@company.com"
-                        className="border-white/10 bg-black/20 text-white placeholder:text-white/40"
+                        className="border-white/10 bg-black/20 py-5 mt-1.5 text-white placeholder:text-white/40"
                       />
                     </div>
                   </div>
@@ -131,7 +127,7 @@ export default function ContactCTASection() {
                     <label className="text-sm text-white/80">Company / Product</label>
                     <Input
                       placeholder="Company name or product"
-                      className="border-white/10 bg-black/20 text-white placeholder:text-white/40"
+                      className="border-white/10 bg-black/20 py-5 mt-1.5 text-white placeholder:text-white/40"
                     />
                   </div>
 
@@ -141,7 +137,7 @@ export default function ContactCTASection() {
                     </label>
                     <Textarea
                       placeholder="Example: Automate lead routing + scheduling + CRM updates..."
-                      className="min-h-[120px] border-white/10 bg-black/20 text-white placeholder:text-white/40"
+                      className="min-h-[120px] border-white/10 bg-black/20 mt-1.5 text-white placeholder:text-white/40"
                     />
                   </div>
 
@@ -151,10 +147,6 @@ export default function ContactCTASection() {
                   >
                     Request a Pilot Call
                   </Button>
-
-                  <p className="text-xs text-white/45">
-                    This is UI-only right now. We can wire it to email/API later.
-                  </p>
                 </form>
               </CardContent>
             </Card>
